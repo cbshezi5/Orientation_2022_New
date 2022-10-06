@@ -1,12 +1,12 @@
 //DB CRDS
-const USERNAME = "admin";
-const PASSWORD = "icep2020"
-const DATABASE_HOSTNAME = "inst-orientation-db.cvqpj5ith2h1.us-east-1.rds.amazonaws.com";
+const USERNAME = "root";
+const PASSWORD = ""
+const DATABASE_HOSTNAME = "localhost";
 //API PORTS
-const HOSTNAME = "http://ec2-18-234-218-224.compute-1.amazonaws.com"
-const SOCKETIO_PORT = process.env.PORT || 80;
-const GRAPH_PORT = process.env.PORT || 80;
-const APP_PORT = process.env.PORT || 80;
+const HOSTNAME = "mediahostseverip"
+const SOCKETIO_PORT = process.env.PORT || 2000;
+const GRAPH_PORT = process.env.PORT || 3000;
+const APP_PORT = process.env.PORT || 4000;
 
 
 function DATABASE()
@@ -14,7 +14,7 @@ function DATABASE()
     if(DATABASE_HOSTNAME == 'localhost')
         return "localhost"
     else
-        return "awshosted"
+        return "hosted"
 
 }
 
